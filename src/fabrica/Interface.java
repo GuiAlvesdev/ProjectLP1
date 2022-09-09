@@ -36,11 +36,29 @@ public class Interface {
 	 *
 	 */
 	
-
+	
 	
 	
 	
 	public static void main(String[] args) {
+		try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+        	System.err.println(ex);
+            
+        } catch (InstantiationException ex) {
+            
+        } catch (IllegalAccessException ex) {
+            
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            
+        }
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -106,7 +124,7 @@ public class Interface {
 		
 		
 		textFabricante = new JTextField();
-		textFabricante.setBounds(126, 222, 193, 20);
+		textFabricante.setBounds(126, 222, 193, 24);
 		frame.getContentPane().add(textFabricante);
 		textFabricante.setColumns(10);
 		
@@ -119,7 +137,7 @@ public class Interface {
 		
 		
 		textModelo = new JTextField();
-		textModelo.setBounds(481, 222, 109, 20);
+		textModelo.setBounds(481, 222, 109, 24);
 		frame.getContentPane().add(textModelo);
 		textModelo.setColumns(10);
 		
@@ -134,7 +152,7 @@ public class Interface {
 		
 		textPlaca = new JTextField();
 		textPlaca.setToolTipText("");
-		textPlaca.setBounds(126, 281, 190, 20);
+		textPlaca.setBounds(126, 281, 190, 24);
 		frame.getContentPane().add(textPlaca);
 		textPlaca.setColumns(10);
 		
@@ -143,7 +161,7 @@ public class Interface {
 		frame.getContentPane().add(lblCor);
 		
 		textCor = new JTextField();
-		textCor.setBounds(481, 281, 109, 20);
+		textCor.setBounds(481, 281, 109, 24);
 		frame.getContentPane().add(textCor);
 		textCor.setColumns(10);
 		
@@ -164,7 +182,7 @@ public class Interface {
 		frame.getContentPane().add(lblAno);
 		
 		textAno = new JTextField();
-		textAno.setBounds(126, 352, 190, 20);
+		textAno.setBounds(126, 352, 190, 24);
 		frame.getContentPane().add(textAno);
 		textAno.setColumns(10);
 	}
