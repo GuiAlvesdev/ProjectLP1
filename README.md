@@ -5,3 +5,4 @@ repositorio destinado as entregas dos mini projetos desenvolvidos na disciplina 
 lets go Java
 
 
+<image width=200px heigth=200px src="https://github.com/GuiAlvesdev/ProjectLP1/blob/master/duke.jpg">
